@@ -24,11 +24,11 @@ source.exclude_dirs = bin, build, dist, contrib, gui/qt, gui/kivy/tools, gui/kiv
 source.exclude_patterns = Makefile,setup*
 
 # (str) Application versioning (method 1)
-version.regex = version_apk = '(.*)'
-version.filename = %(source.dir)s/contrib/versions.py
+#version.regex = version_apk = '(.*)'
+#version.filename = %(source.dir)s/contrib/versions.py
 
 # (str) Application versioning (method 2)
-#version = 1.9.8
+version = 1.9.8
 
 # (list) Application requirements
 requirements = hostpython2, android, openssl, pycrypto, pil, plyer, kivy==master
@@ -55,25 +55,25 @@ fullscreen = False
 # (list) Permissions
 android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 # (int) Android API to use
-#android.api = 14
+#android.api = 8 
 
 # (int) Minimum API required (8 = Android 2.2 devices)
 #android.minapi = 8
 
 # (int) Android SDK version to use
-#android.sdk = 21
+android.sdk = 25
 
 # (str) Android NDK version to use
-#android.ndk = 9
+#android.ndk = 15
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 android.private_storage = True
 
 # (str) Android NDK directory (if empty, it will be automatically downloaded.)
-#android.ndk_path =
+#android.ndk_path = /home/ole/android/ndk
 
 # (str) Android SDK directory (if empty, it will be automatically downloaded.)
-#android.sdk_path =
+android.sdk_path = /home/ole/android/sdk
 
 # (str) Android entry point, default is ok for Kivy-based app
 #android.entrypoint = org.renpy.android.PythonActivity
@@ -117,10 +117,10 @@ android.manifest.intent_filters = gui/kivy/tools/bitcoin_intent.xml
 # project.properties automatically.)
 #android.library_references =
 
-android.whitelist = lib-dynload/_csv.so
+#android.whitelist = lib-dynload/_csv.so
 
 # local version that merges branch 866
-p4a.source_dir = /opt/python-for-android
+#p4a.source_dir = /opt/python-for-android
 
 #
 # iOS specific
