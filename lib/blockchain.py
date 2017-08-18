@@ -32,7 +32,7 @@ import threading
 import bitcoin
 from bitcoin import *
 
-MAX_TARGET = 0x00000000FFFF0000000000000000000000000000000000000000000000000000
+MAX_TARGET = 0x00000000FFFF0000000000000000000000000000000000000000000000000000 
 
 def serialize_header(res):
     s = int_to_hex(res.get('version'), 4) \

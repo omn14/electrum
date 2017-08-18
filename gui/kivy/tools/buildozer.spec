@@ -28,10 +28,10 @@ source.exclude_patterns = Makefile,setup*
 #version.filename = %(source.dir)s/contrib/versions.py
 
 # (str) Application versioning (method 2)
-version = 1.9.8
+version = 2.0.0
 
 # (list) Application requirements
-requirements = hostpython2, android, openssl, pycrypto, pil, plyer, kivy==master
+requirements = hostpython2, android, openssl, pycrypto, pil, plyer, chardet, kivy==master
 
 # (str) Presplash of the application
 #presplash.filename = %(source.dir)s/gui/kivy/theming/splash.png
@@ -64,16 +64,16 @@ android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 android.sdk = 25
 
 # (str) Android NDK version to use
-#android.ndk = 15
+#android.ndk = 9 
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 android.private_storage = True
 
 # (str) Android NDK directory (if empty, it will be automatically downloaded.)
-#android.ndk_path = /home/ole/android/ndk
+android.ndk_path = /mnt/d/and/android/ndk/android-ndk-r13b
 
 # (str) Android SDK directory (if empty, it will be automatically downloaded.)
-android.sdk_path = /home/ole/android/sdk
+android.sdk_path = /mnt/d/and/android/sdk
 
 # (str) Android entry point, default is ok for Kivy-based app
 #android.entrypoint = org.renpy.android.PythonActivity

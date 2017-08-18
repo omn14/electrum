@@ -45,6 +45,7 @@ setup(
         'dnspython',
         'jsonrpclib',
         'PySocks>=1.6.6',
+	'chardet',
     ],
     packages=[
         'electrum',

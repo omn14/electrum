@@ -24,6 +24,8 @@ if __name__ == '__main__':
         'six',
         'jsonrpclib',
 	'socks',
+	'chardet',
+	'urllib3',
     ]
     for module in deps:
         f, pathname, descr = imp.find_module(module)
