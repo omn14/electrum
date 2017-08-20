@@ -59,7 +59,7 @@ class FeeDialog(Factory.Popup):
         self.app = app
         self.config = config
         self.fee_step = self.config.max_fee_rate() / 10
-        self.fee_rate = self.config.fee_per_kb()
+        self.fee_rate = 150000 #self.config.fee_per_kb() #too few blocks for fee estimator to work
         self.callback = callback
         self.dynfees = self.config.get('dynamic_fees', True)
         self.ids.dynfees.active = self.dynfees
