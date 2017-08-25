@@ -51,7 +51,8 @@ DEFAULT_PORTS = {'t':'57001', 's':'57002'}
 #then gradually switch remaining nodes to e-x nodes
 
 DEFAULT_SERVERS = {
-   '46.9.152.115':DEFAULT_PORTS,                # core, e-x
+   '46.9.152.115':DEFAULT_PORTS,						# core, e-x
+   'ec2-18-220-180-89.us-east-2.compute.amazonaws.com':DEFAULT_PORTS,		# core, e-x
 }
 
 def set_testnet():
